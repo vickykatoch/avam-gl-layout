@@ -5,7 +5,10 @@
     "target": "es2015",
     "rootDir": "./",
     "baseUrl": "",
-    "types": []
+    "types": [
+      "node",
+      "jquery"
+    ]
   },
   "files": [
     "./index.ts",

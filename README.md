@@ -1,16 +1,10 @@
-# Warning
+# AVAM-NG-LAYOUT
 
-This quickstart is under active development and hasn't yet reached its final form.
+## Warning
+## UNDER ACTIVE DEVELOPMENT
 
-It may not be fully compatible with current versions of Angular.
 
-# Angular QuickStart Lib
-[![Build Status][travis-badge]][travis-badge-url]
-
-This is a simple library quickstart for Angular libraries, implementing the
-[Angular Package Format v4.0](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit#heading=h.k0mh3o8u5hx).
-
-Currently only unscoped, primary entry-point libraries are supported.
+<!--
 
 Features:
 - a simple example library
@@ -414,3 +408,4 @@ to the `globals` and `external` array in the `rollupBaseConfig` variable in `./b
 
 This ensures your library doesn't package extra libraries inside of it and instead uses the ones
 available in the consuming app.
+-->

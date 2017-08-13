@@ -59,7 +59,8 @@ return Promise.resolve()
         // The key here is library name, and the value is the the name of the global variable name
         // the window object.
         // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals for more.
-        '@angular/core': 'ng.core'
+        '@angular/core': 'ng.core',
+        'golden-layout/index': 'GoldenLayout'
       },
       external: [
         // List of dependencies
