@@ -1,3 +1,43 @@
 @import url("../node_modules/golden-layout/src/css/goldenlayout-base.css");
-@import url("../node_modules/golden-layout/src/css/goldenlayout-dark-theme.css");
+@import url("../node_modules/golden-layout/src/css/goldenlayout-dark-theme.css"); 
+:root {
+  --gl-header-height: 25px;
+}
+
+
+ .lm_header {
+    height: var(--gl-header-height) !important;
+    line-height: var(--gl-header-height) !important;
+}
+ .lm_tabs {
+    height: var(--gl-header-height)!important;
+    line-height: var(--gl-header-height) !important;
+} 
+
+.lm_header .lm_tab {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    box-shadow: none;
+    margin-right: 3px; 
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 5px;
+    height: var(--gl-header-height) !important;
+}
+.lm_header .lm_tab .lm_title {
+    margin-right: 20px;
+}
+.lm_header .lm_tab.lm_active {
+    border-bottom: none;
+    box-shadow: none;
+    background: #990000;
+    padding-bottom: 0;
+    color: #fff;
+}
+.lm_tab:hover, .lm_tab.lm_active {
+    background: #660000;
+    color: #fff;
+}
+
 
