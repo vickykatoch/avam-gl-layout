@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    color:#000;
+}
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+.right-panel {
+    flex-grow: 1;
+}

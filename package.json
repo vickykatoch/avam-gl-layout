@@ -37,7 +37,8 @@
     "release": "standard-version"
   },
   "peerDependencies": {
-    "@angular/core": ">=4.0.0 <5.0.0 || >=4.0.0-beta <5.0.0"
+    "@angular/core": ">=4.0.0 <5.0.0 || >=4.0.0-beta <5.0.0",
+    "golden-layout": ">=1.5.9"
   },
   "devDependencies": {
     "@angular/common": "4.3.4",
@@ -74,9 +75,7 @@
     "systemjs": "0.20.17",
     "tslint": "5.5.0",
     "typescript": "~2.4.2",
-    "zone.js": "0.8.16"
-  },
-  "dependencies": {
+    "zone.js": "0.8.16",
     "golden-layout": "^1.5.9"
   }
 }

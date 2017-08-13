@@ -9,7 +9,11 @@
       "avam-ng-layout": [
         "../lib"
       ]
-    }
+    }, 
+    "types": [
+      "node",
+      "jquery"
+    ]
   },
   "exclude": [
     "main-aot.ts"

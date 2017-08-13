@@ -22,7 +22,8 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-
+      'jquery' : 'npm:golden-layout/lib',
+      'golden-layout' : 'npm:golden-layout/dist',
       // other libraries
       'rxjs': 'npm:rxjs',
     },
@@ -38,6 +39,14 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'jquery' : {
+        defaultExtension: 'js',
+        main: 'jquery.js'
+      },
+      'golden-layout' : {
+        defaultExtension: 'js',
+        main: 'goldenlayout.min.js'
       },
       'avam-ng-layout': {
         main: 'index.js',

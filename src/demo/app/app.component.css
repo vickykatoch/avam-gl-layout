@@ -1,0 +1,28 @@
+:host {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    color : #fff;
+}
+.header {
+    display: flex;
+    height: 40px;
+    background: goldenrod;
+}
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+.footer {
+    display: flex;
+    height: 30px;
+    background: goldenrod;
+}
+.gl-layout {
+    display: flex;
+    flex-grow: 1;
+}
