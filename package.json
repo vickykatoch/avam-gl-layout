@@ -1,12 +1,12 @@
 {
   "name": "avam-ng-layout",
   "version": "0.0.1",
-  "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "An angular layouting component that provides... (Under Development)",
   "main": "./bundles/avam-ng-layout.umd.js",
   "module": "./avam-ng-layout.es5.js",
   "es2015": "./avam-ng-layout.js",
   "typings": "./avam-ng-layout.d.ts",
-  "author": "",
+  "author": "Balwinder Katoch",
   "license": "MIT",
   "repository": {},
   "engines": {

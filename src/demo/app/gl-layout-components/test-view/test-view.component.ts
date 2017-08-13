@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ILayoutItem, LayoutItemConfig } from "avam-ng-layout";
+import { Component, OnInit, Inject } from '@angular/core';
+import { ILayoutItem, LayoutItemConfig, GoldenLayoutComponentState } from "avam-ng-layout";
 
 @Component({
   selector: 'test-view',
@@ -7,6 +7,11 @@ import { ILayoutItem, LayoutItemConfig } from "avam-ng-layout";
   styleUrls: ['./test-view.component.css']
 })
 export class TestViewComponent implements OnInit, ILayoutItem {
+
+  constructor(@Inject(GoldenLayoutComponentState) private state : any) {
+    console.log(state);
+  }
+
 
   id: string = "20";
 
@@ -28,10 +33,6 @@ export class TestViewComponent implements OnInit, ILayoutItem {
   dispose(): void {
     console.log('Disposed');
     // throw new Error("Method not implemented.");
-  }
-
-  constructor() {
-
   }
 
   ngOnInit() {

@@ -19,7 +19,7 @@ export interface ComponentInitCallback extends Function {
 
 export interface ComponentInitCallbackFactory {
     createComponentInitCallback(component : Type<any>) : ComponentInitCallback;
-    saveState() : any;
+    saveState() : LayoutConfigState;
 }
 
 export interface ILayoutItem {
@@ -29,7 +29,7 @@ export interface ILayoutItem {
     dispose() : void;
 }
 
-export interface LayoutComponentState {
+export interface LayoutConfigState {
     layout : any;
     components : {[key: string] : LayoutItemConfig};
 }

@@ -1,5 +1,5 @@
 import { GoldenLayoutConfiguration } from "avam-ng-layout";
-import { TestPanelComponent, TestViewComponent } from './index';
+import { TestPanelComponent, TestViewComponent, TestDynComponent } from './index';
 
 
 export const GlLayoutConfig: GoldenLayoutConfiguration = {
@@ -9,47 +9,36 @@ export const GlLayoutConfig: GoldenLayoutConfiguration = {
     }, {
         componentName: 'test-view',
         component: TestViewComponent
+    }, {
+        componentName: 'dyn-view',
+        component: TestDynComponent
     }],
     defaultLayout: {
         content: [{
             type: 'stack',
-            content: [{
-                type: 'component',
-                title: 'Testing Panel',
-                componentName: 'test-panel',
-                componentState: {
-                    label: 'Test Panel'
-                }
-            }, {
-                type: 'component',
-                title: 'Testing View',
-                componentName: 'test-view',
-                componentState: {
-                    label: 'Test View'
-                }
-            }]
+            content :[]
         }]
     }
 };
 
 // content: [{
-//     type: 'row',
-//     content: [{
-//         type: 'component',
-//         title: 'Testing Panel',
-//         componentName: 'test-panel',
-//         componentState: {
-//             label: 'Test Panel'
-//         }
-//     }, {
-//         type: 'component',
-//         title: 'Testing View',
-//         componentName: 'test-view',
-//         componentState: {
-//             label: 'Test View'
-//         }
-//     }]
-// }]
+//             type: 'stack',
+//             content: [{
+//                 type: 'component',
+//                 title: 'Testing Panel',
+//                 componentName: 'test-panel',
+//                 componentState: {
+//                     label: 'Test Panel'
+//                 }
+//             }, {
+//                 type: 'component',
+//                 title: 'Testing View',
+//                 componentName: 'test-view',
+//                 componentState: {
+//                     label: 'Test View'
+//                 }
+//             }]
+//         }]
 
 
 // content: [{

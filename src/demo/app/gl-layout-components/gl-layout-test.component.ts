@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ILayoutItem, LayoutItemConfig, AvamGoldenContentLayoutService, ComponentConfiguration } from "avam-ng-layout";
+import { ILayoutItem, LayoutItemConfig, AvamGoldenContentLayoutService, ComponentConfiguration, LayoutConfigState } from "avam-ng-layout";
 import { TestDynComponent } from './dyn-view/test-dyn.component';
 
 @Component({
@@ -8,7 +8,7 @@ import { TestDynComponent } from './dyn-view/test-dyn.component';
   styleUrls: ['./gl-layout-test.component.css']
 })
 export class GLLayoutTestComponent implements OnInit {
-  private isRegistered = false;
+  savedLayout: LayoutConfigState;
 
   constructor(private layoutService: AvamGoldenContentLayoutService) {
 
@@ -44,21 +44,21 @@ export class GLLayoutTestComponent implements OnInit {
     const itemConfig = {
       id: this.getID(),
       title: 'Dynamic View',
-      componentName: 'dynamic-view',
+      componentName: 'dyn-view',
       componentState: {
         createdBy: 'Balwinder Katoch (Dynamic)'
       }
     };
-    if (!this.isRegistered) {
-      this.isRegistered = true;
-      const compConfig = {
-        componentName: 'dynamic-view',
-        component: TestDynComponent
-      };
-      this.layoutService.registerComponent(compConfig);
-    }
     this.layoutService.createComponent(itemConfig);
-    // this.layoutService.
+  }
+  onSaveLayout() {
+    this.layoutService.saveLayout()
+      .then(layout => {
+        this.savedLayout = layout
+      }).catch((error: any) => console.error(error));
+  }
+  onRestoreLayout() {
+    this.layoutService.restoreLayout(this.savedLayout);
   }
 
   private getID(): string {

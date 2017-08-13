@@ -17,7 +17,7 @@ import {
   ComponentInitCallbackFactory,
   ComponentInitCallback,
   isLayoutItem,
-  LayoutComponentState,
+  LayoutConfigState,
   GoldenLayoutContainer,
   GoldenLayoutComponentState,
   isOnResizeImplemented,
@@ -77,8 +77,8 @@ export class AvamGoldenContentLayoutComponent implements OnInit, ComponentInitCa
       });
     };
   }
-  saveState() {
-    const state = <LayoutComponentState> {
+  saveState() : LayoutConfigState {
+    const state = <LayoutConfigState> {
       layout : this.goldenLayout.toConfig(),
       components : {}
     };

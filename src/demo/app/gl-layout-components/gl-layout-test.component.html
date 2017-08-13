@@ -3,7 +3,9 @@
     <div class="right-panel">
         <button (click)="onAddView()">Add Test View</button>
         <button (click)="onAddPanel()">Add Test Panel</button>
-        <button (click)="onAddDynView()">Add Dynamic View</button>
+        <button (click)="onAddDynView()">Add Another View</button>
+        <button (click)="onSaveLayout()">Save Layout</button>
+        <button (click)="onRestoreLayout()" [disabled]="!savedLayout">Restore Layout</button>
     </div>
 </div>
 <div class="content">

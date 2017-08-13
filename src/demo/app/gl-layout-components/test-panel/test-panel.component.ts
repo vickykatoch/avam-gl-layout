@@ -13,7 +13,6 @@ export class TestPanelComponent implements OnInit, ILayoutItem {
   ngOnInit() {
     setInterval(() => {
       this.counter++;
-      console.log(this.counter);
     }, 300);
   }
 
