@@ -50,7 +50,7 @@ export class GLLayoutTestComponent implements OnInit {
       }
     };
     if (!this.isRegistered) {
-      debugger;
+      this.isRegistered = true;
       const compConfig = {
         componentName: 'dynamic-view',
         component: TestDynComponent
